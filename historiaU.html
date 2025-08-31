@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Comercio Universitario Transacción Interna</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2.5em;
+        }
+        
+        nav {
+            background-color: #333;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            border-radius: 8px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+        
+        /* Contenido de la pagina */
+        .content-section {
+            width: 90%;
+            max-width: 1200px;
+            margin-top: 20px;
+        }
+
+        .content-section h2 {
+            text-align: center;
+            color: #555;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Estilos específicos para historias de usuario */
+        .card-user-story .card-header {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+        }
+        
+        .card-user-story .card-body p {
+            margin: 5px 0;
+            line-height: 1.5;
+        }
+        
+        .card-user-story .card-body .keyword {
+            font-weight: bold;
+            color: #007BFF;
+        }
+
+        /* Estilos específicos para diseño de interfaces */
+        .card-design-interface {
+            text-align: center;
+        }
+
+        .card-design-interface img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        
+        .card-design-interface .card-description {
+            font-style: italic;
+            color: #777;
+            margin-bottom: 5px;
+        }
+
+        .card-design-interface .card-author {
+            font-weight: bold;
+            color: #333;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sistema de Comercio Universitario Transacción Interna</h1>
+        <nav>
+            <a href="#" onclick="showSection('user-stories')">Historias de usuario</a>
+            <a href="#" onclick="showSection('interfaces')">Diseño de interfaces</a>
+        </nav>
+    </header>
+
+    <main class="content-section" id="main-content">
+        </main>
+    
+    <script>
+        const userStoriesHTML = `
+            <h2>Historias de usuario</h2>
+            <div class="cards-grid">
+                <div class="card card-user-story" style="background-color: lightblue;">
+                    <div class="card-header">Juan Martinez</div>
+                    <div class="card-body">
+                        <p><span class="keyword">Como</span> usuario,</p>
+                        <p><span class="keyword">Quiero</span> calificar a los vendedores activos,</p>
+                        <p><span class="keyword">Para</span> saber cuales ofrecen un mejor servicio.</p>
+                    </div>
+                </div>
+
+                <div class="card card-user-story" style="background-color: lightgreen;">
+                    <div class="card-header">Juana Martinez</div>
+                    <div class="card-body">
+                        <p><span class="keyword">Como</span> vendedor,</p>
+                        <p><span class="keyword">Quiero</span> poder tener mas anuncions sobre mis productos,</p>
+                        <p><span class="keyword">Para</span> tener mas clientes y ventas.</p>
+                    </div>
+                </div>
+
+                <div class="card card-user-story">
+                    <div class="card-header">Javier López</div>
+                    <div class="card-body">
+                        <p><span class="keyword">Como</span> administrador,</p>
+                        <p><span class="keyword">Quiero</span> poder verificar la legalidad de los productos que vendemos,</p>
+                        <p><span class="keyword">Para</span> asegurar que todos nuestros productos son obtenidos de forma confiable y legal.</p>
+                    </div>
+                </div>
+                
+                <div class="card card-user-story">
+                    <div class="card-header">Jessica Torres</div>
+                    <div class="card-body">
+                        <p><span class="keyword">Como</span> visitante del sitio,</p>
+                        <p><span class="keyword">Quiero</span> poder revisar la calidad del producto,</p>
+                        <p><span class="keyword">Para</span> saber que el producto esta bien fabricado.</p>
+                    </div>
+                </div>
+
+                <div class="card card-user-story">
+                    <div class="card-header">Jose Gómez</div>
+                    <div class="card-body">
+                        <p><span class="keyword">Como</span> cliente,</p>
+                        <p><span class="keyword">Quiero</span> poder ver el monto de lo que estoy comprando en total con el iva ya incluido,</p>
+                        <p><span class="keyword">Para</span> saber el precio total exacto.</p>
+                    </div>
+                </div>
+                
+                <!-- NUEVAS HISTORIAS DE USUARIO -->
+                <div class="card card-user-story" style="background-color: #ffd8b1;">
+                    <div class="card-header">Carlos Ramírez</div>
+                    <div class="card-body">
+                        <p><span class="keyword">Como</span> estudiante comprador,</p>
+                        <p><span class="keyword">Quiero</span> filtrar productos por ubicación dentro del campus,</p>
+                        <p><span class="keyword">Para</span> poder encontrar artículos cerca de mi facultad.</p>
+                    </div>
+                </div>
+                
+                <div class="card card-user-story" style="background-color: #e2d1ff;">
+                    <div class="card-header">María Fernández</div>
+                    <div class="card-body">
+                        <p><span class="keyword">Como</span> vendedora ocasional,</p>
+                        <p><span class="keyword">Quiero</span> un sistema de mensajería integrado,</p>
+                        <p><span class="keyword">Para</span> coordinar el intercambio de productos sin compartir mi número personal.</p>
+                    </div>
+                </div>
+                
+                <div class="card card-user-story" style="background-color: #c9f7c9;">
+                    <div class="card-header">Roberto Silva</div>
+                    <div class="card-body">
+                        <p><span class="keyword">Como</span> usuario con discapacidad visual,</p>
+                        <p><span class="keyword">Quiero</span> que la plataforma sea compatible con lectores de pantalla,</p>
+                        <p><span class="keyword">Para</span> poder navegar y realizar compras de forma autónoma.</p>
+                    </div>
+                </div>
+                
+                <div class="card card-user-story" style="background-color: #ffcccc;">
+                    <div class="card-header">Laura Mendoza</div>
+                    <div class="card-body">
+                        <p><span class="keyword">Como</span> usuaria frecuente,</p>
+                        <p><span class="keyword">Quiero</span> guardar mis métodos de pago favoritos,</p>
+                        <p><span class="keyword">Para</span> agilizar el proceso de compra en futuras transacciones.</p>
+                    </div>
+                </div>
+                
+                <div class="card card-user-story" style="background-color: #c7eeff;">
+                    <div class="card-header">Diego Herrera</div>
+                    <div class="card-body">
+                        <p><span class="keyword">Como</span> miembro del equipo de soporte,</p>
+                        <p><span class="keyword">Quiero</span> acceso a un panel de gestión de disputas,</p>
+                        <p><span class="keyword">Para</span> resolver conflictos entre compradores y vendedores de manera eficiente.</p>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        const interfacesHTML = `
+            <h2>Diseño de interfaces</h2>
+            <div class="cards-grid">
+                <div class="card card-design-interface" style="background-color: lightblue;">
+                    <img src="login.png" alt="Diseño de interfaz de login">
+                    <div class="card-description">Un diseño de interfaz simple y moderno para la página de inicio de sesión.</div>
+                    <div class="card-author">Autor: Juan Pérez</div>
+                </div>
+                
+                <div class="card card-design-interface">
+                    <img src="https://via.placeholder.com/300" alt="Diseño de la página principal">
+                    <div class="card-description">Página principal con un enfoque minimalista para mejorar la navegación.</div>
+                    <div class="card-author">Autor: Sofía Rodríguez</div>
+                </div>
+                
+                <div class="card card-design-interface">
+                    <img src="https://via.placeholder.com/300" alt="Diseño de la página de productos">
+                    <div class="card-description">Diseño de la galería de productos, optimizado para la búsqueda por categorías.</div>
+                    <div class="card-author">Autor: Luis González</div>
+                </div>
+
+                <div class="card card-design-interface">
+                    <img src="https://via.placeholder.com/300" alt="Diseño de carrito de compras">
+                    <div class="card-description">Una vista detallada del carrito de compras, con opciones de pago seguras.</div>
+                    <div class="card-author">Autor: Ana Martínez</div>
+                </div>
+
+                <div class="card card-design-interface">
+                    <img src="https://via.placeholder.com/300" alt="Diseño del perfil de usuario">
+                    <div class="card-description">Interfaz del perfil de usuario con acceso rápido a su historial y configuraciones.</div>
+                    <div class="card-author">Autor: David Sánchez</div>
+                </div>
+
+                <div class="card card-design-interface">
+                    <img src="https://via.placeholder.com/300" alt="Diseño de notificaciones">
+                    <div class="card-description">Un diseño claro para las notificaciones del sistema y mensajes de confirmación.</div>
+                    <div class="card-author">Autor: Elena Fernández</div>
+                </div>
+            </div>
+        `;
+        
+        // Función para mostrar la sección correcta
+        function showSection(section) {
+            const mainContent = document.getElementById('main-content');
+            if (section === 'user-stories') {
+                mainContent.innerHTML = userStoriesHTML;
+            } else if (section === 'interfaces') {
+                mainContent.innerHTML = interfacesHTML;
+            }
+        }
+        
+        // Muestra las historias de usuario por defecto al cargar la página
+        document.addEventListener('DOMContentLoaded', () => {
+            showSection('user-stories');
+        });
+
+    </script>
+</body>
+</html>
