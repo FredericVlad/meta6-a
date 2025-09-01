@@ -1,0 +1,93 @@
+
+<!-- Historia 1 -->
+<article class="card">
+<div class="meta">#1 — Servicio Inteligente</div>
+<h2>Como <strong>usuario de movilidad</strong>, quiero <strong>recibir rutas multimodales optimizadas</strong> para <strong>llegar más rápido aprovechando transporte público y micromovilidad</strong>.</h2>
+<div class="criteria">
+<strong>Criterios de aceptación</strong>
+<ul>
+<li>El sistema sugiere al menos 2 rutas alternativas.</li>
+<li>Incluye tiempos estimados y costo aproximado.</li>
+<li>Ofrece integración con alquiler de bicicletas/scooters.</li>
+</ul>
+</div>
+</article>
+
+
+<!-- Historia 2 -->
+<article class="card">
+<div class="meta">#2 — Salud Preventiva</div>
+<h2>Como <strong>paciente con riesgo cardiometabólico</strong>, quiero <strong>recibir alertas y planes personalizados</strong> para <strong>mejorar mis hábitos y prevenir complicaciones</strong>.</h2>
+<div class="criteria">
+<strong>Criterios de aceptación</strong>
+<ul>
+<li>Las alertas se basan en datos de actividad y registro de alimentos.</li>
+<li>Incluye micro-objetivos semanales y feedback automatizado.</li>
+<li>Se puede compartir resumen con el médico en PDF.</li>
+</ul>
+</div>
+</article>
+
+
+<!-- Historia 3 -->
+<article class="card">
+<div class="meta">#3 — Educación Adaptativa</div>
+<h2>Como <strong>estudiante</strong>, quiero <strong>lecciones adaptadas a mi ritmo</strong> para <strong>aprender más rápido y con menos frustración</strong>.</h2>
+<div class="criteria">
+<strong>Criterios de aceptación</strong>
+<ul>
+<li>Evaluación diagnóstica automática al iniciar el módulo.</li>
+<li>Recomendaciones de contenidos según desempeño.</li>
+<li>Reporte de progreso semanal con sugerencias de estudio.</li>
+</ul>
+</div>
+</article>
+
+
+<!-- Historia 4 -->
+<article class="card">
+<div class="meta">#4 — Comercio Local</div>
+<h2>Como <strong>dueño de tienda local</strong>, quiero <strong>una vitrina digital que recomiende mis productos</strong> para <strong>incrementar ventas a través de promociones personalizadas</strong>.</h2>
+<div class="criteria">
+<strong>Criterios de aceptación</strong>
+<ul>
+<li>El sistema muestra productos destacados por zona y temporada.</li>
+<li>Permite enviar cupones geolocalizados a clientes cercanos.</li>
+<li>Panel con métricas básicas de conversiones y visitas.</li>
+</ul>
+</div>
+</article>
+
+
+<!-- Historia 5 -->
+<article class="card">
+<div class="meta">#5 — Energía Inteligente</div>
+<h2>Como <strong>propietario de vivienda</strong>, quiero <strong>gestionar el consumo energético desde una app</strong> para <strong>reducir costos y usar más energía renovable</strong>.</h2>
+<div class="criteria">
+<strong>Criterios de aceptación</strong>
+<ul>
+<li>Monitoriza consumo por electrodoméstico.</li>
+<li>Sugiere horarios óptimos para uso según tarifa y producción solar.</li>
+<li>Permite programar cargas (lavadora, EV) automáticamente.</li>
+</ul>
+</div>
+</article>
+
+
+</div>
+
+
+<div class="algoritmo card">
+<strong>Historia algorítmica generada (concisa y al punto)</strong>
+<p style="margin-top:8px">Mediante un patrón persona-acción-beneficio, el algoritmo combinó variables de impacto (tiempo, coste, adopción) para producir esta historia final:</p>
+<pre>Como <strong>usuario objetivo</strong>, quiero <strong>una acción concreta y medible</strong> para <strong>obtener un beneficio claro y verificable</strong>.</pre>
+<p class="meta">Ejemplo concreto (generado): <em>Como vecino, quiero recibir avisos inmediatos de puntos de reciclaje cercanos para reducir mi desperdicio y obtener incentivos.</em></p>
+</div>
+
+
+<footer>
+Abre el archivo, copia/descarga o solicita ajustes (formato, más historias, criterios técnicos). ¡Puedo adaptarlas al formato de tu equipo (Jira, Trello, Markdown, etc.)!
+</footer>
+</div>
+</body>
+</html>
